@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Crafted Africa</title>
+<link href="/tailwind.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Be+Vietnam+Pro:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .hide-scrollbar::-webkit-scrollbar { display: none; }
+        .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+@keyframes weave-pulse {
+  0%, 100% { transform: scale(1); letter-spacing: normal; }
+  50% { transform: scale(1.02); letter-spacing: 0.02em; }
+}
+.logo-weave-effect {
+  animation: weave-pulse 4s ease-in-out infinite;
+  display: inline-block;
+}
+</style></head>
+<body class="bg-surface font-body text-on-surface mb-32">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-white/35 backdrop-blur-3xl border-b border-white/40 shadow-[0px_8px_24px_rgba(27,28,26,0.1)] flex justify-between items-center px-6 h-16 w-full">
+<div class="flex items-center gap-4">
+<button class="text-[#984220] hover:bg-white/20 transition-colors p-2 rounded-full active:scale-95 duration-150">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+<h1 class="crafted-title font-plus-jakarta font-extrabold text-[#984220] tracking-tight text-2xl">Crafted</h1>
+</div>
+<button class="text-[#984220] hover:bg-white/20 transition-colors p-2 rounded-full active:scale-95 duration-150 relative">
+<span class="material-symbols-outlined" data-icon="notifications">notifications</span>
+<span class="absolute top-2 right-2 w-2 h-2 bg-error rounded-full"></span>
+</button>
+</header>
+<main class="mt-20 px-6 max-w-5xl mx-auto space-y-10">
+<!-- Search Bar Section -->
+<section class="mt-6">
+<div class="relative group">
+<div class="absolute inset-y-0 left-4 flex items-center pointer-events-none">
+<span class="material-symbols-outlined text-outline" data-icon="search">search</span>
+</div>
+<input class="w-full h-14 pl-12 pr-4 bg-surface-container-low rounded-2xl border-2 border-transparent focus:border-primary focus:ring-4 focus:ring-primary/10 focus:bg-surface-container-lowest transition-all duration-300 placeholder:text-outline-variant font-medium outline-none" placeholder="Search unique handmade crafts..." type="text"/>
+</div>
+</section>
+<!-- Featured Artisan Stories Carousel -->
+<section class="relative overflow-hidden rounded-[2.5rem]">
+<div class="flex hide-scrollbar overflow-x-auto snap-x snap-mandatory">
+<div class="min-w-full snap-start relative h-[420px] group">
+<img class="w-full h-full object-cover" data-alt="Close-up of a skilled West African weaver's hands working on a traditional colorful loom with intricate patterns" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDjqF77Vg2vN_AxKgji8VBehB4lqSg3ODvdyfsd4RsQRVQ8ZDS1yQ1uGaVPUDUizSRzlGrl8J1X954ywUUEMAxIrenkY_HnErKjtpuEU7zw_nWVnZkWpIr061iPYshMAUdtJNs_EJJjteQUuGSyvq-NF6KejhqOHicAUN_ne69C1KMR10qcJvMuvSkc9YnSFhvu7TtLKO42WfqVeG6erK3Gx-jAuYT7PzDwHFaAVvP3lJDAZVXAKIzFwVyOD_CH8hTYM1X2ItALHKnV"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/80 via-on-surface/20 to-transparent"></div>
+<div class="absolute bottom-8 left-8 right-8 text-white">
+<span class="bg-primary/90 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest mb-4 inline-block">Story of the Week</span>
+<h2 class="font-headline font-bold text-3xl leading-tight mb-2">The Loom of Heritage: Amara's Kente Journey</h2>
+<p class="text-white/80 line-clamp-2 mb-6 max-w-lg">How a small village in Ghana is preserving centuries-old weaving techniques through global connectivity.</p>
+<button class="bg-gradient-to-br from-primary to-primary-container text-white px-8 py-3 rounded-xl font-bold text-sm hover:scale-105 transition-transform active:scale-95">Read Story</button>
+</div>
+</div>
+</div>
+<!-- Progress indicators -->
+<div class="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2">
+<div class="w-8 h-1 bg-white rounded-full"></div>
+<div class="w-2 h-1 bg-white/40 rounded-full"></div>
+<div class="w-2 h-1 bg-white/40 rounded-full"></div>
+</div>
+</section>
+<!-- Categories Horizontal Scroll -->
+<section>
+<div class="flex justify-between items-end mb-6">
+<h3 class="font-headline font-extrabold text-2xl text-on-surface">Browse by Craft</h3>
+<a class="text-primary font-bold text-sm border-b border-primary/20 pb-1" href="#">View All</a>
+</div>
+<div class="flex gap-4 overflow-x-auto hide-scrollbar -mx-6 px-6">
+<div class="flex-shrink-0 flex flex-col items-center gap-3">
+<div class="w-20 h-20 rounded-2xl bg-surface-container flex items-center justify-center hover:bg-primary-fixed transition-colors cursor-pointer group">
+<span class="material-symbols-outlined text-3xl text-primary group-hover:scale-110 transition-transform" data-icon="diamond">diamond</span>
+</div>
+<span class="text-xs font-bold uppercase tracking-wider text-outline">Jewelry</span>
+</div>
+<div class="flex-shrink-0 flex flex-col items-center gap-3">
+<div class="w-20 h-20 rounded-2xl bg-surface-container flex items-center justify-center hover:bg-primary-fixed transition-colors cursor-pointer group">
+<span class="material-symbols-outlined text-3xl text-primary group-hover:scale-110 transition-transform" data-icon="texture">texture</span>
+</div>
+<span class="text-xs font-bold uppercase tracking-wider text-outline">Textiles</span>
+</div>
+<div class="flex-shrink-0 flex flex-col items-center gap-3">
+<div class="w-20 h-20 rounded-2xl bg-surface-container flex items-center justify-center hover:bg-primary-fixed transition-colors cursor-pointer group">
+<span class="material-symbols-outlined text-3xl text-primary group-hover:scale-110 transition-transform" data-icon="coffee">coffee</span>
+</div>
+<span class="text-xs font-bold uppercase tracking-wider text-outline">Pottery</span>
+</div>
+<div class="flex-shrink-0 flex flex-col items-center gap-3">
+<div class="w-20 h-20 rounded-2xl bg-surface-container flex items-center justify-center hover:bg-primary-fixed transition-colors cursor-pointer group">
+<span class="material-symbols-outlined text-3xl text-primary group-hover:scale-110 transition-transform" data-icon="event_seat">event_seat</span>
+</div>
+<span class="text-xs font-bold uppercase tracking-wider text-outline">Furniture</span>
+</div>
+<div class="flex-shrink-0 flex flex-col items-center gap-3">
+<div class="w-20 h-20 rounded-2xl bg-surface-container flex items-center justify-center hover:bg-primary-fixed transition-colors cursor-pointer group">
+<span class="material-symbols-outlined text-3xl text-primary group-hover:scale-110 transition-transform" data-icon="sculpture">artist</span>
+</div>
+<span class="text-xs font-bold uppercase tracking-wider text-outline">Art</span>
+</div>
+</div>
+</section>
+<!-- Impact Widget -->
+<section class="bg-primary/5 rounded-[2rem] p-8 relative overflow-hidden border border-primary/10 hover:scale-[1.01] transition-all duration-500 cursor-default">
+<div class="absolute top-0 right-0 w-32 h-32 bg-primary/10 rounded-full -mr-10 -mt-10 blur-3xl"></div>
+<div class="relative z-10 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+<div>
+<h3 class="font-headline font-extrabold text-2xl text-on-surface mb-2">Impact This Month</h3>
+<p class="text-on-surface-variant leading-relaxed">Your purchases directly fuel sustainable economic growth for communities across the continent.</p>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div class="bg-surface-container-lowest p-6 rounded-2xl shadow-[0px_12px_32px_rgba(27,28,26,0.04)] hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+<span class="text-primary font-extrabold text-2xl block mb-1">$15,400</span>
+<span class="text-[10px] uppercase font-bold tracking-widest text-outline">Distributed</span>
+</div>
+<div class="bg-surface-container-lowest p-6 rounded-2xl shadow-[0px_12px_32px_rgba(27,28,26,0.04)] hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+<span class="text-secondary font-extrabold text-2xl block mb-1">82</span>
+<span class="text-[10px] uppercase font-bold tracking-widest text-outline">Families Supported</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Artisan Spotlight (Bento Layout) -->
+<section>
+<div class="flex justify-between items-end mb-8">
+<h3 class="font-headline font-extrabold text-2xl text-on-surface">Artisan Spotlight</h3>
+<span class="text-outline text-sm font-medium">Curated Daily</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6 h-[600px] md:h-[500px]">
+<!-- Main Large Feature -->
+<div class="md:col-span-7 bg-surface-container-lowest rounded-3xl overflow-hidden group relative flex flex-col shadow-[0px_12px_32px_rgba(27,28,26,0.04)] hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 cursor-pointer">
+<div class="h-2/3 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Beautifully crafted handcrafted ceramic bowls with earthy tones and minimalist design on a rustic wooden table" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCu3wZ4Jbjuz085WR9St5OTID5pi6tewa7SoaK48Wq86258CcBNObi0zJgRNxxEmMAXG7ll8WRmEzcuBTPcrgKf6sGS4Wkhw4s66hAVgumfd7_yQ_Nhj63QAt3vYizpA40ncPFmL4Xij97gip6ViN7zreKZ4naD_XXMy3JsNKIbM5YaztEBgPpBwxtOvddIXhUFEDAdjKFsBD1mlLTo8_fkpACGbL6ZAjz9W0BK7T8je-nsFASLbwTqojuakM_RsSos5qX7iE7YM2Wo"/>
+</div>
+<div class="p-6 flex-grow">
+<div class="flex justify-between items-start mb-2">
+<div>
+<h4 class="font-headline font-bold text-xl">Kofi Mensah</h4>
+<p class="text-on-surface-variant text-sm">Accra, Ghana • Master Potter</p>
+</div>
+<span class="material-symbols-outlined text-tertiary-container" data-icon="verified" style="font-variation-settings: 'FILL' 1;">verified</span>
+</div>
+<div class="flex gap-2 mt-4">
+<span class="px-3 py-1 bg-surface-container text-[10px] font-bold uppercase tracking-widest rounded-lg">Eco-Friendly</span>
+<span class="px-3 py-1 bg-surface-container text-[10px] font-bold uppercase tracking-widest rounded-lg">Heritage</span>
+</div>
+</div>
+</div>
+<!-- Secondary Small Features -->
+<div class="md:col-span-5 grid grid-rows-2 gap-6">
+<div class="bg-surface-container-lowest rounded-3xl overflow-hidden flex items-center p-4 gap-4 shadow-[0px_12px_32px_rgba(27,28,26,0.04)] hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-pointer">
+<img class="w-24 h-24 rounded-2xl object-cover" data-alt="A portrait of a smiling female artisan artisan holding a beautiful hand-woven patterned basket" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCUuDExWxZVvVa3AtOjas7tHaN23mIAR-kNaHKdWumoyW9vdhC80B-7dsNUBnMYznxIBg6QO9-1-SjZzmn_jICI2KfrY7TBoH2d-gAsGeqFVXOoc8BRjis313P6Jp6xfGceLiEemINmihdoKiFu8Ny7-aq9X3-1yagW5jSbNDj-MRlh4gPD9vfZ19UFDl22yyM89h1UxicIxyjNEi2e72HmvPqy2TCOOt42m_zqq6nXMYWoupcqt0RRVKIuuHL9d8CI_bT76ZlGJtR2"/>
+<div>
+<h4 class="font-bold text-lg">Zainab Abid</h4>
+<p class="text-on-surface-variant text-xs mb-3">Basketry • Lagos</p>
+<button class="text-primary font-bold text-xs flex items-center gap-1 group">
+                                View Collection <span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</div>
+<div class="bg-surface-container-lowest rounded-3xl overflow-hidden flex items-center p-4 gap-4 shadow-[0px_12px_32px_rgba(27,28,26,0.04)] hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-pointer">
+<img class="w-24 h-24 rounded-2xl object-cover" data-alt="Intricate golden beaded necklaces and bangles arranged artfully on a velvet background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCvc6xMSfsvn550s6eyLO-t49hxM4cxb7NrfI2B8ImPhwHwP7o4Kxq_44e_a-AFeWCso452bQlq5UbW8pxFQvEvCngDKCymaSgmyPfj497HKwUfdmo7HKEYDHCOWaBMMRctoynKF68UYir7h51AbxHT1NQukVksWTvULRSvXZo5Rwr0D2x-CKSjZkfWcLB4cwjZ7RJwu8J7UPi8C_KDskK3O-_MbTsxLXkkza_WMfnKyFskg1-xnKjHywYvto9bSKp-XKlDLvjoM2rt"/>
+<div>
+<h4 class="font-bold text-lg">Oluwa Damilare</h4>
+<p class="text-on-surface-variant text-xs mb-3">Beaded Art • Nairobi</p>
+<button class="text-primary font-bold text-xs flex items-center gap-1 group">
+                                View Collection <span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Product Gallery (Magazine Style) -->
+<section class="pb-12">
+<div class="flex justify-between items-end mb-8">
+<h3 class="font-headline font-extrabold text-2xl text-on-surface">Curated Pieces</h3>
+</div>
+<div class="grid grid-cols-2 gap-6">
+<!-- Card 1 -->
+<div class="space-y-3">
+<div class="aspect-[4/5] bg-surface-container-low rounded-3xl overflow-hidden relative group">
+<img class="w-full h-full object-cover" data-alt="A modern minimalist living room featuring a large hand-woven neutral colored area rug as the centerpiece" src="https://lh3.googleusercontent.com/aida-public/AB6AXuClInVA6TjEayZGtlrG5rT8baufaZpq4JtAEs-JDb2RY6KvnHu77t-jnHU579SNNd0lzK5lCI0X6FDRQFoheMoufmQNthqX_PaFQC5_TyxJ8PrczrmSw4EuASSxRNfoYRkKFaZudaMu3poT133cHqd-hDHQRqnlPWHtExhIChnv4aUabPfuEUMo7m7sknVHGUouqMBzUxOocxJhsqHOfPAyBjmNVtcGCd2ZnFGuos9nCWOkNmiv4lyRtunE_lw1hm-ENrKBCTFXNqGo"/>
+<button class="absolute top-4 right-4 w-10 h-10 bg-white/80 backdrop-blur-md rounded-full flex items-center justify-center text-primary active:scale-90 transition-transform">
+<span class="material-symbols-outlined" data-icon="favorite">favorite</span>
+</button>
+</div>
+<div>
+<p class="text-[10px] font-bold uppercase tracking-widest text-primary mb-1">Rugs &amp; Decor</p>
+<h4 class="font-bold text-lg leading-tight">Savannah Weave Area Rug</h4>
+<p class="text-on-surface-variant font-medium">$245.00</p>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="space-y-3 pt-12">
+<div class="aspect-[4/5] bg-surface-container-low rounded-3xl overflow-hidden relative group">
+<img class="w-full h-full object-cover" data-alt="Macro photo of vibrant indigo dyed fabric with complex tie-dye patterns in deep blue and white" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA2UMn_sXtc_ZRUqriqAhAECBHrEY56VRb8kt6BDVFReKJ4RoZUTZP3WZ56OZCNLN6yBZMk4ZdubO0hYIXVq6OeIh8SFThcFDSNqJYSrGyZA4nwXBK7pQuFo5x1bYIR3LsZ6xXuCa_bGtnh6Ye0rq-BbVTKGae9wmuNfBlNqDXwJGfwX4ljfb3Mq0ec4WHpujT_q_nbN7D2k0g2JokEk09a7ZDD9a2jHg4hUDfcrQ2hEs7whlKcFuG8AHt074hGwViwHKVpR1N-sVOG"/>
+<button class="absolute top-4 right-4 w-10 h-10 bg-white/80 backdrop-blur-md rounded-full flex items-center justify-center text-primary active:scale-90 transition-transform">
+<span class="material-symbols-outlined" data-icon="favorite">favorite</span>
+</button>
+</div>
+<div>
+<p class="text-[10px] font-bold uppercase tracking-widest text-primary mb-1">Textiles</p>
+<h4 class="font-bold text-lg leading-tight">Indigo Storm Mud Cloth</h4>
+<p class="text-on-surface-variant font-medium">$85.00</p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-center px-4 pb-6 pt-2 bg-white/35 backdrop-blur-3xl border-t border-white/40 z-50 rounded-t-[2rem] shadow-[0px_-12px_32px_rgba(27,28,26,0.14)]">
+<a class="flex flex-col items-center justify-center bg-[#f4e7df]/90 text-[#984220] border border-[#984220]/20 rounded-2xl p-3 transform -translate-y-1 transition-all group" href="/home" onclick="window.parent.location.href='/home'; return false;">
+<span class="material-symbols-outlined" data-icon="home" style="font-variation-settings: 'FILL' 1;">home</span>
+<span class="font-be-vietnam text-[10px] font-medium tracking-wide uppercase mt-1">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#984220]/80 p-2 hover:text-[#984220] transition-all active:scale-90 tap-highlight-transparent" href="/dashboard" onclick="window.parent.location.href='/dashboard'; return false;">
+<span class="material-symbols-outlined" data-icon="explore">explore</span>
+<span class="font-be-vietnam text-[10px] font-medium tracking-wide uppercase mt-1">Explore</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#984220]/80 p-2 hover:text-[#984220] transition-all active:scale-90 tap-highlight-transparent" href="/product" onclick="window.parent.location.href='/product'; return false;">
+<span class="material-symbols-outlined" data-icon="shopping_cart">shopping_cart</span>
+<span class="font-be-vietnam text-[10px] font-medium tracking-wide uppercase mt-1">Cart</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#984220]/80 p-2 hover:text-[#984220] transition-all active:scale-90 tap-highlight-transparent" href="/product" onclick="window.parent.location.href='/product'; return false;">
+<span class="material-symbols-outlined" data-icon="favorite">favorite</span>
+<span class="font-be-vietnam text-[10px] font-medium tracking-wide uppercase mt-1">Favorites</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#984220]/80 p-2 hover:text-[#984220] transition-all active:scale-90 tap-highlight-transparent" href="/profile" onclick="window.parent.location.href='/profile'; return false;">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+<span class="font-be-vietnam text-[10px] font-medium tracking-wide uppercase mt-1">Profile</span>
+</a>
+</nav>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://unpkg.com/gsap@3.12.5/SplitText.min.js"></script>
+<script>
+  (function () {
+    if (!window.gsap || !window.ScrollTrigger) return;
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+    gsap.registerPlugin(ScrollTrigger);
+    if (window.SplitText) {
+      gsap.registerPlugin(window.SplitText);
+    }
+
+    const animateCraftedTitle = () => {
+      const title = document.querySelector('.crafted-title');
+      if (!title || title.dataset.splitAnimated === 'true') return;
+
+      const threshold = 0.1;
+      const startPct = (1 - threshold) * 100;
+
+      title.style.overflow = 'hidden';
+      title.style.display = 'inline-block';
+      title.style.whiteSpace = 'normal';
+      title.style.willChange = 'transform, opacity';
+
+      let chars;
+      if (window.SplitText) {
+        const split = new window.SplitText(title, {
+          type: 'chars,words',
+          charsClass: 'split-char',
+          wordsClass: 'split-word',
+        });
+        chars = split.chars;
+      } else {
+        const text = title.textContent || '';
+        title.textContent = '';
+        const frag = document.createDocumentFragment();
+        text.split('').forEach((ch) => {
+          const span = document.createElement('span');
+          span.className = 'split-char';
+          span.textContent = ch === ' ' ? '\u00A0' : ch;
+          frag.appendChild(span);
+        });
+        title.appendChild(frag);
+        chars = title.querySelectorAll('.split-char');
+      }
+
+      gsap.fromTo(
+        chars,
+        { opacity: 0, y: 40 },
+        {
+          opacity: 1,
+          y: 0,
+          duration: 2,
+          ease: 'power3.out',
+          stagger: 0.08,
+          scrollTrigger: {
+            trigger: title,
+            start: `top ${startPct}%`,
+            once: true,
+            fastScrollEnd: true,
+            anticipatePin: 0.4,
+          },
+          onComplete: () => {
+            title.dataset.splitAnimated = 'true';
+          },
+        }
+      );
+    };
+
+    animateCraftedTitle();
+
+    const candidates = Array.from(
+      document.querySelectorAll('main section, main section > div, main article, main .grid > div, main .flex > div')
+    ).filter((el) => el.offsetWidth > 20 && el.offsetHeight > 20);
+
+    const targets = [...new Set(candidates)];
+
+    targets.forEach((el, index) => {
+      gsap.set(el, {
+        autoAlpha: 0,
+        y: 24,
+        filter: 'blur(10px)',
+        willChange: 'opacity, transform, filter',
+      });
+
+      gsap.to(el, {
+        autoAlpha: 1,
+        y: 0,
+        filter: 'blur(0px)',
+        duration: 1,
+        ease: 'power2.out',
+        delay: Math.min(index * 0.03, 0.25),
+        scrollTrigger: {
+          trigger: el,
+          start: 'top 90%',
+          once: true,
+        },
+      });
+    });
+  })();
+</script>
+</body></html>

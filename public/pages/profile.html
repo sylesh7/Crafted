@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="/tailwind.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Be+Vietnam+Pro:wght@300;400;500;600;700&amp;family=Merriweather:ital,wght@0,400;0,700;1,400&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+    .glass-nav {
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface font-body text-on-surface">
+
+  <!-- TopAppBar -->
+  <nav class="fixed top-0 w-full z-50 bg-white/35 backdrop-blur-3xl border-b border-white/40 shadow-[0px_8px_24px_rgba(27,28,26,0.1)] flex justify-between items-center px-6 h-16 w-full">
+    <div class="flex items-center gap-4">
+      <button class="p-2 hover:bg-white/20 rounded-full transition-colors active:scale-95 text-[#984220]">
+        <span class="material-symbols-outlined">arrow_back</span>
+      </button>
+      <span class="crafted-title font-headline font-extrabold text-[#984220] tracking-tight text-2xl">Crafted</span>
+    </div>
+    <div class="flex items-center gap-2">
+      <button class="p-2 hover:bg-white/20 rounded-full transition-colors active:scale-95 text-[#984220]">
+        <span class="material-symbols-outlined">share</span>
+      </button>
+      <button class="p-2 hover:bg-white/20 rounded-full transition-colors active:scale-95 text-[#984220]">
+        <span class="material-symbols-outlined">notifications</span>
+      </button>
+    </div>
+  </nav>
+
+  <main class="pt-16 pb-24">
+    <!-- Hero Header -->
+    <section class="relative h-64 md:h-96 w-full overflow-hidden">
+      <img src="https://images.unsplash.com/photo-1594911772125-07fc7a2d8d9f?q=80&w=2070&auto=format&fit=crop" 
+           alt="Kemi at loom" 
+           class="w-full h-full object-cover"
+           data-alt="A focused Nigerian artisan weaver working intently at a traditional wooden loom, soft morning light filtering through a studio window onto vibrant threads.">
+      <div class="absolute inset-0 bg-gradient-to-t from-on-surface/40 to-transparent"></div>
+    </section>
+
+    <!-- Profile Info Overlay -->
+    <section class="max-w-6xl mx-auto px-6 -mt-20 relative z-10">
+      <div class="bg-surface-container-lowest rounded-xl p-8 shadow-[0px_12px_32px_rgba(27,28,26,0.04)] flex flex-col md:flex-row md:items-end justify-between gap-8">
+        <div class="flex flex-col md:flex-row gap-6 items-start">
+          <div class="relative">
+            <img src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?q=80&w=1974&auto=format&fit=crop" 
+                 alt="Kemi Adeyemi" 
+                 class="w-32 h-32 md:w-40 md:h-40 rounded-xl object-cover border-4 border-surface-container-lowest shadow-lg"
+                 data-alt="Portrait of a smiling professional Nigerian woman artisan with a warm gaze, wearing traditional woven textiles against a neutral background.">
+            <div class="absolute -bottom-2 -right-2 bg-secondary text-white p-1.5 rounded-full flex items-center justify-center shadow-md">
+              <span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">verified</span>
+            </div>
+          </div>
+          <div class="space-y-2">
+            <h1 class="text-4xl md:text-5xl font-headline font-bold text-on-surface tracking-tight">Kemi Adeyemi</h1>
+            <p class="text-secondary font-medium tracking-wide uppercase text-sm">Master Textile Weaver • Lagos, Nigeria</p>
+            <div class="flex items-center gap-4 pt-2">
+              <div class="flex flex-col">
+                <span class="text-xl font-bold text-on-surface">4.9</span>
+                <div class="flex text-[#8b4c05]">
+                  <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+                  <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+                  <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+                  <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+                  <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star_half</span>
+                </div>
+              </div>
+              <div class="h-8 w-px bg-outline-variant/30"></div>
+              <div class="flex flex-col">
+                <span class="text-xl font-bold text-on-surface">450</span>
+                <span class="text-[10px] uppercase tracking-widest text-on-surface/60">Sales</span>
+              </div>
+              <div class="h-8 w-px bg-outline-variant/30"></div>
+              <div class="flex flex-col">
+                <span class="text-xl font-bold text-on-surface">12</span>
+                <span class="text-[10px] uppercase tracking-widest text-on-surface/60">Years</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex gap-3">
+          <button class="px-8 py-3 bg-gradient-to-br from-[#984220] to-[#b75a36] text-white rounded-xl font-headline font-bold text-sm shadow-lg hover:scale-[1.02] active:scale-95 transition-all">
+            Follow
+          </button>
+          <button class="px-8 py-3 bg-surface-container-highest text-on-surface rounded-xl font-headline font-bold text-sm hover:bg-surface-variant transition-all active:scale-95">
+            Message
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Artisan Story -->
+    <section class="max-w-6xl mx-auto px-6 mt-16 grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
+      <div class="md:col-span-7 space-y-6">
+        <h2 class="text-3xl font-headline font-bold text-primary">The Weaver's Narrative</h2>
+        <div class="font-serif text-lg leading-relaxed text-on-surface/80 space-y-4">
+          <p>
+            For Kemi Adeyemi, weaving is more than just a craft; it is a conversation with the ancestors. Born in the heart of Yorubaland, she began learning the intricacies of the Aso Oke loom at the age of seven, guided by her grandmother's weathered but steady hands.
+          </p>
+          <p>
+            Her work today blends ancient geometric patterns with modern, minimalist aesthetics. Each piece takes weeks of meticulous effort, using hand-dyed organic cotton and silk threads that capture the vibrant spirit of contemporary Lagos while honoring the weight of tradition.
+          </p>
+        </div>
+      </div>
+      <div class="md:col-span-5 relative">
+        <div class="bg-tertiary-container/10 aspect-square rounded-xl absolute -top-4 -right-4 w-full h-full -z-10"></div>
+        <img src="https://images.unsplash.com/photo-1490150028271-460d3615e45a?q=80&w=2070&auto=format&fit=crop" 
+             alt="Detail of textile" 
+             class="w-full aspect-square object-cover rounded-xl shadow-xl"
+             data-alt="Extreme close-up of intricate hand-woven textile featuring geometric patterns in earthy terracotta, cream, and deep teal threads.">
+      </div>
+    </section>
+
+    <!-- Behind the Scenes Gallery -->
+    <section class="bg-surface-container-low mt-24 py-20">
+      <div class="max-w-6xl mx-auto px-6">
+        <div class="flex justify-between items-end mb-12">
+          <div class="space-y-2">
+            <h2 class="text-3xl font-headline font-bold text-on-surface">Inside the Studio</h2>
+            <p class="text-on-surface/60 font-medium">Capturing the raw rhythm of the craft.</p>
+          </div>
+          <button class="text-secondary font-bold text-sm underline underline-offset-8">View All Stories</button>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="group overflow-hidden rounded-xl aspect-[4/5] relative">
+            <img src="https://images.unsplash.com/photo-1544465544-1b71aee9dfa3?q=80&w=1974&auto=format&fit=crop" 
+                 class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                 data-alt="Drying hand-dyed silk yarns hanging from a wooden beam, casting long shadows in a sun-drenched artisan courtyard.">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
+              <p class="text-white text-sm font-medium">The Dyeing Process</p>
+            </div>
+          </div>
+          <div class="group overflow-hidden rounded-xl aspect-[4/5] relative mt-8 md:mt-0">
+            <img src="https://images.unsplash.com/photo-1518103328109-7f311c97a522?q=80&w=1961&auto=format&fit=crop" 
+                 class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                 data-alt="A collection of vintage wooden spools and shuttles arranged neatly on a dark wooden workbench, showing years of use.">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
+              <p class="text-white text-sm font-medium">Ancestral Tools</p>
+            </div>
+          </div>
+          <div class="group overflow-hidden rounded-xl aspect-[4/5] relative mt-16 md:mt-0">
+            <img src="https://images.unsplash.com/photo-1614850523296-d8c1af93d400?q=80&w=2070&auto=format&fit=crop" 
+                 class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                 data-alt="Abstract soft-focus image of woven textures and threads creating a sense of movement and artistry.">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
+              <p class="text-white text-sm font-medium">Final Finishing</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Product Grid -->
+    <section class="max-w-6xl mx-auto px-6 py-24">
+      <div class="flex items-center gap-4 mb-12">
+        <h2 class="text-3xl font-headline font-bold text-on-surface">Available Works</h2>
+        <div class="flex-grow h-px bg-outline-variant/20"></div>
+        <div class="flex gap-2">
+          <span class="px-4 py-1.5 rounded-full bg-primary text-white text-xs font-bold uppercase tracking-wider">All</span>
+          <span class="px-4 py-1.5 rounded-full bg-surface-container text-on-surface/60 text-xs font-bold uppercase tracking-wider">Scarves</span>
+          <span class="px-4 py-1.5 rounded-full bg-surface-container text-on-surface/60 text-xs font-bold uppercase tracking-wider">Wall Art</span>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-x-6 gap-y-12">
+        <!-- Card 1 -->
+        <div class="group cursor-pointer">
+          <div class="aspect-[3/4] rounded-xl overflow-hidden mb-4 bg-surface-container relative">
+            <img src="https://images.unsplash.com/photo-1574515286241-791f4813f890?q=80&w=1965&auto=format&fit=crop" 
+                 class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                 data-alt="An indigo-dyed cotton scarf with delicate cream-colored woven motifs, displayed against a light linen background.">
+            <button class="absolute top-3 right-3 w-10 h-10 bg-white/80 backdrop-blur-md rounded-full flex items-center justify-center text-on-surface hover:text-error transition-colors">
+              <span class="material-symbols-outlined text-xl">favorite</span>
+            </button>
+          </div>
+          <h3 class="font-headline font-bold text-on-surface">Midnight Indigo Scarf</h3>
+          <p class="text-sm text-on-surface/60 font-medium mb-2">Hand-dyed organic cotton</p>
+          <p class="text-lg font-bold text-primary">$185</p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="group cursor-pointer">
+          <div class="aspect-[3/4] rounded-xl overflow-hidden mb-4 bg-surface-container relative">
+            <img src="https://images.unsplash.com/photo-1544273677-c433136021d4?q=80&w=2070&auto=format&fit=crop" 
+                 class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                 data-alt="Earth-toned woven wall hanging with geometric shapes in terracotta and ochre, suspended from a natural wood branch.">
+            <button class="absolute top-3 right-3 w-10 h-10 bg-white/80 backdrop-blur-md rounded-full flex items-center justify-center text-on-surface hover:text-error transition-colors">
+              <span class="material-symbols-outlined text-xl">favorite</span>
+            </button>
+          </div>
+          <h3 class="font-headline font-bold text-on-surface">Desert Mirage Wall Piece</h3>
+          <p class="text-sm text-on-surface/60 font-medium mb-2">Mixed fibers & silk</p>
+          <p class="text-lg font-bold text-primary">$420</p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="group cursor-pointer">
+          <div class="aspect-[3/4] rounded-xl overflow-hidden mb-4 bg-surface-container relative">
+            <img src="https://images.unsplash.com/photo-1528642474498-1af0c17fd8c3?q=80&w=2070&auto=format&fit=crop" 
+                 class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                 data-alt="Vibrant multi-colored woven runner with intricate traditional Nigerian patterns.">
+            <button class="absolute top-3 right-3 w-10 h-10 bg-white/80 backdrop-blur-md rounded-full flex items-center justify-center text-on-surface hover:text-error transition-colors">
+              <span class="material-symbols-outlined text-xl">favorite</span>
+            </button>
+          </div>
+          <h3 class="font-headline font-bold text-on-surface">Festival Table Runner</h3>
+          <p class="text-sm text-on-surface/60 font-medium mb-2">Aso Oke classic weave</p>
+          <p class="text-lg font-bold text-primary">$290</p>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="group cursor-pointer">
+          <div class="aspect-[3/4] rounded-xl overflow-hidden mb-4 bg-surface-container relative">
+            <img src="https://images.unsplash.com/photo-1541099649105-f69ad21f3246?q=80&w=1974&auto=format&fit=crop" 
+                 class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                 data-alt="Minimalist woven shawl in ivory and gold thread, capturing a luxurious high-end artisanal look.">
+            <button class="absolute top-3 right-3 w-10 h-10 bg-white/80 backdrop-blur-md rounded-full flex items-center justify-center text-on-surface hover:text-error transition-colors">
+              <span class="material-symbols-outlined text-xl">favorite</span>
+            </button>
+          </div>
+          <h3 class="font-headline font-bold text-on-surface">Sunlight Silk Shawl</h3>
+          <p class="text-sm text-on-surface/60 font-medium mb-2">Wild silk & metallic thread</p>
+          <p class="text-lg font-bold text-primary">$350</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- BottomNavBar -->
+  <nav class="fixed bottom-0 left-0 w-full flex justify-around items-center px-4 pb-6 pt-2 bg-white/35 backdrop-blur-3xl border-t border-white/40 z-50 rounded-t-[2rem] shadow-[0px_-12px_32px_rgba(27,28,26,0.14)]">
+    <a href="/home" onclick="window.parent.location.href='/home'; return false;" class="flex flex-col items-center justify-center text-[#984220]/80 p-2 hover:text-[#984220] transition-all active:scale-90">
+      <span class="material-symbols-outlined">home</span>
+      <span class="font-be-vietnam text-[10px] font-medium tracking-wide uppercase">Home</span>
+    </a>
+    <a href="/dashboard" onclick="window.parent.location.href='/dashboard'; return false;" class="flex flex-col items-center justify-center text-[#984220]/80 p-2 hover:text-[#984220] transition-all active:scale-90">
+      <span class="material-symbols-outlined">explore</span>
+      <span class="font-be-vietnam text-[10px] font-medium tracking-wide uppercase">Explore</span>
+    </a>
+    <a href="/product" onclick="window.parent.location.href='/product'; return false;" class="flex flex-col items-center justify-center text-[#984220]/80 p-2 hover:text-[#984220] transition-all active:scale-90">
+      <span class="material-symbols-outlined">shopping_cart</span>
+      <span class="font-be-vietnam text-[10px] font-medium tracking-wide uppercase">Cart</span>
+    </a>
+    <a href="/product" onclick="window.parent.location.href='/product'; return false;" class="flex flex-col items-center justify-center text-[#984220]/80 p-2 hover:text-[#984220] transition-all active:scale-90">
+      <span class="material-symbols-outlined">favorite</span>
+      <span class="font-be-vietnam text-[10px] font-medium tracking-wide uppercase">Favorites</span>
+    </a>
+    <a href="/profile" onclick="window.parent.location.href='/profile'; return false;" class="flex flex-col items-center justify-center bg-[#f4e7df]/90 text-[#984220] border border-[#984220]/20 rounded-2xl p-3 transform -translate-y-1 transition-all">
+      <span class="material-symbols-outlined">person</span>
+      <span class="font-be-vietnam text-[10px] font-medium tracking-wide uppercase">Profile</span>
+    </a>
+  </nav>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/gsap@3.12.5/SplitText.min.js"></script>
+  <script>
+    (function () {
+      if (!window.gsap || !window.ScrollTrigger) return;
+      if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+      gsap.registerPlugin(ScrollTrigger);
+      if (window.SplitText) {
+        gsap.registerPlugin(window.SplitText);
+      }
+
+      const animateCraftedTitle = () => {
+        const title = document.querySelector('.crafted-title');
+        if (!title || title.dataset.splitAnimated === 'true') return;
+
+        const threshold = 0.1;
+        const startPct = (1 - threshold) * 100;
+
+        title.style.overflow = 'hidden';
+        title.style.display = 'inline-block';
+        title.style.whiteSpace = 'normal';
+        title.style.willChange = 'transform, opacity';
+
+        let chars;
+        if (window.SplitText) {
+          const split = new window.SplitText(title, {
+            type: 'chars,words',
+            charsClass: 'split-char',
+            wordsClass: 'split-word',
+          });
+          chars = split.chars;
+        } else {
+          const text = title.textContent || '';
+          title.textContent = '';
+          const frag = document.createDocumentFragment();
+          text.split('').forEach((ch) => {
+            const span = document.createElement('span');
+            span.className = 'split-char';
+            span.textContent = ch === ' ' ? '\u00A0' : ch;
+            frag.appendChild(span);
+          });
+          title.appendChild(frag);
+          chars = title.querySelectorAll('.split-char');
+        }
+
+        gsap.fromTo(
+          chars,
+          { opacity: 0, y: 40 },
+          {
+            opacity: 1,
+            y: 0,
+            duration: 2,
+            ease: 'power3.out',
+            stagger: 0.08,
+            scrollTrigger: {
+              trigger: title,
+              start: `top ${startPct}%`,
+              once: true,
+              fastScrollEnd: true,
+              anticipatePin: 0.4,
+            },
+            onComplete: () => {
+              title.dataset.splitAnimated = 'true';
+            },
+          }
+        );
+      };
+
+      animateCraftedTitle();
+
+      const candidates = Array.from(
+        document.querySelectorAll('main section, main section > div, main article, main .grid > div, main .flex > div')
+      ).filter((el) => el.offsetWidth > 20 && el.offsetHeight > 20);
+
+      const targets = [...new Set(candidates)];
+
+      targets.forEach((el, index) => {
+        gsap.set(el, {
+          autoAlpha: 0,
+          y: 24,
+          filter: 'blur(10px)',
+          willChange: 'opacity, transform, filter',
+        });
+
+        gsap.to(el, {
+          autoAlpha: 1,
+          y: 0,
+          filter: 'blur(0px)',
+          duration: 1,
+          ease: 'power2.out',
+          delay: Math.min(index * 0.03, 0.25),
+          scrollTrigger: {
+            trigger: el,
+            start: 'top 90%',
+            once: true,
+          },
+        });
+      });
+    })();
+  </script>
+
+</body>
+</html>

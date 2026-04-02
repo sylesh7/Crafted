@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="/tailwind.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Be+Vietnam+Pro:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      body {
+        background-color: #fbf9f6;
+        color: #1b1c1a;
+        font-family: 'Be Vietnam Pro', sans-serif;
+      }
+      .no-scrollbar::-webkit-scrollbar { display: none; }
+      .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="font-body selection:bg-primary-container selection:text-white">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-white/35 backdrop-blur-3xl border-b border-white/40 shadow-[0px_8px_24px_rgba(27,28,26,0.1)] flex justify-between items-center px-6 h-16 w-full">
+<div class="flex items-center gap-4">
+<button class="text-[#984220] hover:bg-white/20 transition-colors p-2 rounded-full active:scale-95">
+<span class="material-symbols-outlined">arrow_back</span>
+</button>
+<h1 class="crafted-title font-plus-jakarta font-extrabold text-[#984220] tracking-tight text-2xl">Crafted</h1>
+</div>
+<div class="flex items-center gap-2">
+<button class="text-[#984220] hover:bg-white/20 transition-colors p-2 rounded-full active:scale-95">
+<span class="material-symbols-outlined">share</span>
+</button>
+<button class="text-[#984220] hover:bg-white/20 transition-colors p-2 rounded-full active:scale-95">
+<span class="material-symbols-outlined">favorite</span>
+</button>
+</div>
+</header>
+<main class="pt-16 pb-32 max-w-7xl mx-auto">
+<!-- Hero Section: Image Gallery (Asymmetric Layout) -->
+<section class="px-6 py-8">
+<div class="grid grid-cols-12 gap-4 h-[500px]">
+<div class="col-span-12 md:col-span-8 relative overflow-hidden rounded-xl bg-surface-container shadow-sm">
+<img class="w-full h-full object-cover" data-alt="Detailed close-up of a hand-woven indigo kente scarf showing intricate geometric patterns and deep blue textile textures in soft sunlight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBNmKNMLOkmAyCqBm-wJH-Vjh4eZpuR_lcdSEkWFJWfo7-CdJnKWQL8F9ef2TS9h9eQxZ3Sqr4aOmztK5Pv2MQg-GK-_bPm7RsL0iFUC_-RZbB0vxxpw4tNbfjzlLxQ9F-c9Cs2OrmkHXJSd9mBqbrMsh8i9ppIgfDgI2cm926zgddW43yq7aUXzLftuTBSyW2ZK0RnduKvhYSdi5Xrfh0rpFVxgubOrpUARSJpgVkdMsD7tRMrq03tzlU87JWsYQT6a56I9rqw0ThG"/>
+<div class="absolute bottom-4 left-4 bg-surface/90 backdrop-blur-md px-3 py-1 rounded-full text-xs font-bold text-primary">Main View</div>
+</div>
+<div class="hidden md:flex md:col-span-4 flex-col gap-4">
+<div class="h-1/2 relative overflow-hidden rounded-xl bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Macro photography of artisan hand-weaving process on a traditional loom with indigo dyed threads and wooden tools" src="https://lh3.googleusercontent.com/aida-public/AB6AXuASBcrABjJU1lDPHySfN8jCJf75DTHbkP8M5nnj3E_ffiOFaAS3jsRc8bQP6BCweqUSsqU4GDIFOeYmRXuF6_P6Q-NcgerD90z1NCv14T4HniTVIFoP_IizqXZw1BEinRL1NdUdzpVSiG8khzZpXrWlZKu82U3LHlRgyfsDNVc4MkeihTg0xVnh1g3M3n4FGTZrt3EShHq2DNoDi1d00NOMZqsiavz2CUIVkmb2dhzhLsorR09wz5rmDB8wyl_rQlj5MLL5IT5SQHhs"/>
+</div>
+<div class="h-1/2 relative overflow-hidden rounded-xl bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="A lifestyle shot of the indigo kente scarf draped elegantly over a wooden chair in a bright, sunlit minimalist studio" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDVNI9qI7ZDLEr9kaj4bmvaEJGrsnfcX1Rtvpok4WtlgO3qZJuLdU4FeQCY_TuFIrDy2AVNyTL91h5Ag650kLSrf-cp91KdQvrf3Oh85WRm1HT2XzZrnboNu0jidgXHTADX7M15bAoX-grjPBmJwkn7290n8hz481ZAohARE-jgZRslzDyghe2nOW2PKW30GAt0Un-E4XZNt8X4um4ZbvziAbx8uVMqhuDYBgOxsTkifM_0pBhhjBbdAphyEX096_MY3sSnDSu9KixJ"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Product Content Grid -->
+<section class="px-6 grid grid-cols-1 lg:grid-cols-3 gap-12 mt-4">
+<!-- Left Column: Details -->
+<div class="lg:col-span-2 space-y-12">
+<div>
+<div class="flex items-center gap-2 mb-2 text-tertiary font-semibold tracking-wider text-xs uppercase">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">verified</span>
+                        Artisan Direct
+                    </div>
+<h2 class="font-headline text-4xl md:text-5xl font-bold text-on-surface leading-tight mb-4">Hand-Woven Indigo Kente Scarf</h2>
+<p class="text-on-surface-variant text-lg leading-relaxed max-w-2xl">
+                        A timeless piece of West African heritage, meticulously hand-crafted using traditional indigo dyeing techniques and heritage Kente weaving patterns. Each scarf represents over 40 hours of focused labor.
+                    </p>
+</div>
+<!-- Price Transparency Widget -->
+<div class="bg-surface-container-low rounded-xl p-8 space-y-6">
+<div class="flex justify-between items-end">
+<div>
+<p class="text-on-surface-variant text-sm font-medium mb-1">Total Investment</p>
+<span class="font-headline text-3xl font-extrabold text-on-surface">$145.00</span>
+</div>
+<div class="text-right">
+<span class="bg-primary/10 text-primary text-xs font-bold px-3 py-1 rounded-full uppercase">Impact Score: High</span>
+</div>
+</div>
+<div class="space-y-4">
+<h4 class="text-on-surface font-bold text-sm">Where your money goes:</h4>
+<div class="w-full h-3 flex rounded-full overflow-hidden">
+<div class="h-full bg-primary" style="width: 70%"></div>
+<div class="h-full bg-secondary" style="width: 15%"></div>
+<div class="h-full bg-tertiary" style="width: 5%"></div>
+<div class="h-full bg-outline-variant" style="width: 10%"></div>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4 pt-2">
+<div>
+<p class="text-[10px] text-on-surface-variant font-bold uppercase tracking-tighter">Artisan Earnings</p>
+<p class="text-primary font-bold">70%</p>
+</div>
+<div>
+<p class="text-[10px] text-on-surface-variant font-bold uppercase tracking-tighter">Platform Fee</p>
+<p class="text-secondary font-bold">15%</p>
+</div>
+<div>
+<p class="text-[10px] text-on-surface-variant font-bold uppercase tracking-tighter">Training Fund</p>
+<p class="text-tertiary font-bold">5%</p>
+</div>
+<div>
+<p class="text-[10px] text-on-surface-variant font-bold uppercase tracking-tighter">Operations</p>
+<p class="text-on-surface-variant font-bold">10%</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Artisan Fragment -->
+<div class="relative flex flex-col md:flex-row items-center gap-8 md:gap-12 py-8">
+<div class="w-full md:w-64 h-80 rounded-xl overflow-hidden shadow-lg transform -rotate-2">
+<img class="w-full h-full object-cover" data-alt="Portrait of Kemi Adeyemi, a smiling artisan woman in a vibrant workshop, wearing traditional West African textiles" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCINSIRaRIK6MiVI_VCuLxgbYfh1uPxs29YTUyl3UgV-y8fFGodxCClfJpsQTuwZ9SEMRUdAc5rYASbPhZlQUcbsffYV1FeX2icTo9Azxq1Z9dABVQbAj3UajX8dU2fOMNO0_K-hcyiDVsYBblwOkkbL6oEnst3zM7y3UGFdboF9ebbX4QVTsh7nJ70wCxJYn0iIRRxovavI-Ep_A_RS0JqLju-OP6Z3bf7lkVzxwMlj-ubbQlc4izIqqQ-Xyw8BEjX2hArUDfl6Zkl"/>
+</div>
+<div class="flex-1 bg-tertiary-fixed/30 p-8 rounded-xl md:-ml-20 md:mt-20 z-10 backdrop-blur-sm">
+<h3 class="font-headline text-2xl font-bold text-on-tertiary-fixed mb-2">Meet the Artisan: Kemi Adeyemi</h3>
+<p class="text-on-tertiary-fixed-variant leading-relaxed mb-4">
+                            "Each thread I weave is a prayer for the person who will wear it. My indigo comes from the earth, and my patterns from my ancestors."
+                        </p>
+<button class="text-on-tertiary-fixed font-bold text-sm underline decoration-2 underline-offset-4 hover:text-tertiary transition-colors">Read Kemi's Full Story</button>
+</div>
+</div>
+<!-- Materials & Care -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 border-t border-outline-variant/15 pt-12">
+<div class="space-y-4">
+<h5 class="font-bold flex items-center gap-2 text-on-surface">
+<span class="material-symbols-outlined text-primary">eco</span>
+                            Materials
+                        </h5>
+<ul class="space-y-2 text-on-surface-variant">
+<li class="flex items-center gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                                100% Organic GOTS Certified Cotton
+                            </li>
+<li class="flex items-center gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                                Hand-harvested Natural Indigo Dye
+                            </li>
+<li class="flex items-center gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                                No synthetic fixatives or chemicals
+                            </li>
+</ul>
+</div>
+<div class="space-y-4">
+<h5 class="font-bold flex items-center gap-2 text-on-surface">
+<span class="material-symbols-outlined text-primary">wash</span>
+                            Care Instructions
+                        </h5>
+<ul class="space-y-2 text-on-surface-variant">
+<li class="flex items-center gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                                Hand wash cold with mild detergent
+                            </li>
+<li class="flex items-center gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                                Dry in shade to maintain indigo depth
+                            </li>
+<li class="flex items-center gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                                Iron on low heat if necessary
+                            </li>
+</ul>
+</div>
+</div>
+</div>
+<!-- Right Column: Sticky Purchase Widget -->
+<div class="lg:sticky lg:top-24 h-fit space-y-6">
+<div class="bg-surface-container-lowest rounded-xl p-6 shadow-[0px_12px_32px_rgba(27,28,26,0.04)]">
+<div class="flex justify-between items-center mb-6">
+<span class="text-on-surface-variant font-medium">Availability</span>
+<span class="text-secondary font-bold text-sm bg-secondary-container/20 px-3 py-1 rounded-full">Only 3 remaining</span>
+</div>
+<div class="space-y-4 mb-8">
+<label class="block text-xs font-bold text-on-surface-variant uppercase tracking-widest">Select Dimensions</label>
+<div class="flex gap-2">
+<button class="flex-1 py-3 px-4 rounded-lg border-2 border-primary bg-primary/5 text-primary font-bold text-sm">72" x 14"</button>
+<button class="flex-1 py-3 px-4 rounded-lg border border-outline-variant text-on-surface-variant font-medium text-sm hover:border-primary transition-colors">84" x 18"</button>
+</div>
+</div>
+<button class="w-full py-4 rounded-xl bg-gradient-to-br from-[#984220] to-[#b75a36] text-white font-bold text-lg shadow-lg active:scale-95 transition-all mb-4 flex items-center justify-center gap-2">
+<span class="material-symbols-outlined">shopping_bag</span>
+                        Add to Cart
+                    </button>
+<div class="space-y-4 pt-4 border-t border-outline-variant/15">
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-on-surface-variant text-lg">local_shipping</span>
+<div>
+<p class="text-sm font-bold text-on-surface">Carbon Neutral Shipping</p>
+<p class="text-xs text-on-surface-variant">Arrives in 5-8 business days</p>
+</div>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-on-surface-variant text-lg">verified_user</span>
+<div>
+<p class="text-sm font-bold text-on-surface">Artisan Guarantee</p>
+<p class="text-xs text-on-surface-variant">Ethically sourced &amp; certified</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Bento Style Secondary Highlight -->
+<div class="bg-primary text-white p-6 rounded-xl relative overflow-hidden">
+<div class="relative z-10">
+<h4 class="font-bold text-xl mb-2">Preserving the Craft</h4>
+<p class="text-sm text-white/80 leading-snug">5% of this purchase goes directly into the Artisan Training Fund to teach young weavers in Ghana.</p>
+</div>
+<span class="material-symbols-outlined absolute -bottom-4 -right-4 text-white/10 text-9xl">school</span>
+</div>
+</div>
+</section>
+</main>
+<!-- BottomNavBar (Only for Mobile) -->
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-center px-4 pb-6 pt-2 bg-white/35 backdrop-blur-3xl border-t border-white/40 z-50 rounded-t-[2rem] shadow-[0px_-12px_32px_rgba(27,28,26,0.14)]">
+<a class="flex flex-col items-center justify-center text-[#984220]/80 p-2 hover:text-[#984220] transition-all active:scale-90" href="/home" onclick="window.parent.location.href='/home'; return false;">
+<span class="material-symbols-outlined">home</span>
+<span class="font-be-vietnam text-[10px] font-medium tracking-wide uppercase mt-1">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#984220]/80 p-2 hover:text-[#984220] transition-all active:scale-90" href="/dashboard" onclick="window.parent.location.href='/dashboard'; return false;">
+<span class="material-symbols-outlined">explore</span>
+<span class="font-be-vietnam text-[10px] font-medium tracking-wide uppercase mt-1">Explore</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-[#f4e7df]/90 text-[#984220] border border-[#984220]/20 rounded-2xl p-3 transform -translate-y-1 transition-all active:scale-90" href="/product" onclick="window.parent.location.href='/product'; return false;">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">shopping_cart</span>
+<span class="font-be-vietnam text-[10px] font-medium tracking-wide uppercase mt-1">Cart</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#984220]/80 p-2 hover:text-[#984220] transition-all active:scale-90" href="/product" onclick="window.parent.location.href='/product'; return false;">
+<span class="material-symbols-outlined">favorite</span>
+<span class="font-be-vietnam text-[10px] font-medium tracking-wide uppercase mt-1">Favorites</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#984220]/80 p-2 hover:text-[#984220] transition-all active:scale-90" href="/profile" onclick="window.parent.location.href='/profile'; return false;">
+<span class="material-symbols-outlined">person</span>
+<span class="font-be-vietnam text-[10px] font-medium tracking-wide uppercase mt-1">Profile</span>
+</a>
+</nav>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://unpkg.com/gsap@3.12.5/SplitText.min.js"></script>
+<script>
+  (function () {
+    if (!window.gsap || !window.ScrollTrigger) return;
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+    gsap.registerPlugin(ScrollTrigger);
+    if (window.SplitText) {
+      gsap.registerPlugin(window.SplitText);
+    }
+
+    const animateCraftedTitle = () => {
+      const title = document.querySelector('.crafted-title');
+      if (!title || title.dataset.splitAnimated === 'true') return;
+
+      const threshold = 0.1;
+      const startPct = (1 - threshold) * 100;
+
+      title.style.overflow = 'hidden';
+      title.style.display = 'inline-block';
+      title.style.whiteSpace = 'normal';
+      title.style.willChange = 'transform, opacity';
+
+      let chars;
+      if (window.SplitText) {
+        const split = new window.SplitText(title, {
+          type: 'chars,words',
+          charsClass: 'split-char',
+          wordsClass: 'split-word',
+        });
+        chars = split.chars;
+      } else {
+        const text = title.textContent || '';
+        title.textContent = '';
+        const frag = document.createDocumentFragment();
+        text.split('').forEach((ch) => {
+          const span = document.createElement('span');
+          span.className = 'split-char';
+          span.textContent = ch === ' ' ? '\u00A0' : ch;
+          frag.appendChild(span);
+        });
+        title.appendChild(frag);
+        chars = title.querySelectorAll('.split-char');
+      }
+
+      gsap.fromTo(
+        chars,
+        { opacity: 0, y: 40 },
+        {
+          opacity: 1,
+          y: 0,
+          duration: 2,
+          ease: 'power3.out',
+          stagger: 0.08,
+          scrollTrigger: {
+            trigger: title,
+            start: `top ${startPct}%`,
+            once: true,
+            fastScrollEnd: true,
+            anticipatePin: 0.4,
+          },
+          onComplete: () => {
+            title.dataset.splitAnimated = 'true';
+          },
+        }
+      );
+    };
+
+    animateCraftedTitle();
+
+    const candidates = Array.from(
+      document.querySelectorAll('main section, main section > div, main article, main .grid > div, main .flex > div')
+    ).filter((el) => el.offsetWidth > 20 && el.offsetHeight > 20);
+
+    const targets = [...new Set(candidates)];
+
+    targets.forEach((el, index) => {
+      gsap.set(el, {
+        autoAlpha: 0,
+        y: 24,
+        filter: 'blur(10px)',
+        willChange: 'opacity, transform, filter',
+      });
+
+      gsap.to(el, {
+        autoAlpha: 1,
+        y: 0,
+        filter: 'blur(0px)',
+        duration: 1,
+        ease: 'power2.out',
+        delay: Math.min(index * 0.03, 0.25),
+        scrollTrigger: {
+          trigger: el,
+          start: 'top 90%',
+          once: true,
+        },
+      });
+    });
+  })();
+</script>
+</body></html>
